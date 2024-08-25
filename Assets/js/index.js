@@ -10,3 +10,11 @@ btnsumar.addEventListener("click", () => {
   const cantidad = Number(cantidadElement.innerHTML) + 1;
   cantidadElement.innerHTML = cantidad;
 });
+
+const btnrestar = document.getElementById("restar");
+
+btnrestar.addEventListener("click", () => {
+  const cantidadElement = document.querySelector(".cantidad");
+  const cantidad = Number(cantidadElement.innerHTML) - 1;
+  cantidadElement.innerHTML = cantidad;
+});
